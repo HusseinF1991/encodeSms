@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:id="@+id/txtMessageTime"/>
+
+    <Button
+        android:id="@+id/btnSmsDeliveryFailed"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/txtMessageTime"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/refresh"/>
+
+    <TextView
+        android:id="@+id/txtMessageBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMessageTime"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="3dp"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:background="@drawable/shape_bg_incoming_bubble"/>
+
+</RelativeLayout>

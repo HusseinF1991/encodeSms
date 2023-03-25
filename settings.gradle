@@ -1,0 +1,1 @@
+include ':app', ':encodemessages_licensegenapp', ':encodemessages_licensegenactivator'

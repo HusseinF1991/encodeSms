@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CryptoSms</string>
+
+    <!-- for item tag of the sms chats list view -->
+    <string name="contactNumber">contactNumber</string>
+
+
+    <!-- for the Sms chats activity -->
+    <string name="sms_Chats_Activity">الرسائل</string>
+
+
+    <!-- for the new sms activity -->
+    <string name="new_Sms_Activity">رسالة جديدة</string>
+
+    <!-- tag of the position -->
+    <string name="sms_Id_ContactChatAdapter">item_Position_ContactChatAdapter</string>
+</resources>

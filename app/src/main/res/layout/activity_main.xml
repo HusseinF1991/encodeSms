@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/smsback2">
+
+
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/smscode"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_light"
+        android:text="أدخل المعلومات للتسجيل"/>
+
+
+    <EditText
+        android:id="@+id/etxtPhoneNumber"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:hint="رقم الهاتف"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/etxtConfirmPhoneNumber"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:hint="تأكيد رقم الهاتف"
+        android:inputType="number"/>
+
+    <Spinner
+        android:id="@+id/simIdSpinner"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="موافق"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

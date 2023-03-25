@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ContactChatActivity"
+    android:background="@drawable/smsback2">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_ContactChatActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="@android:color/white">
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ListView
+        android:id="@+id/contactChatListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnSendMessage"
+        android:layout_below="@+id/toolbar_ContactChatActivity"
+        android:layout_marginBottom="5dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="15dp">
+
+    </ListView>
+
+
+    <EditText
+        android:id="@+id/etxtInputMessage"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:hint="الرسالة"
+        android:singleLine="true"
+        android:textAlignment="viewEnd" />
+
+
+    <Button
+        android:id="@+id/btnSendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/etxtInputMessage"
+        android:background="@android:drawable/ic_menu_send" />
+
+    <ProgressBar
+        android:id="@+id/pBarSmsSent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>
+
